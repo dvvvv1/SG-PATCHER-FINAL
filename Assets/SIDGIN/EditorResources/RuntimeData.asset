@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 777291690, guid: 2f27773ba024b7b438c0e56203935443, type: 3}
   m_Name: RuntimeData
   m_EditorClassIdentifier: 
-  sceneDatas: []
+  sceneDatas:
+  - index: 0
+    name: SampleScene
+    sharedResources: None
   sharedResources: []

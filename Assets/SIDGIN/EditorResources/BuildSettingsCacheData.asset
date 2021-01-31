@@ -18,7 +18,13 @@ MonoBehaviour:
     scenesFolderPath: 
     buildTarget: 13
     compressType: 1
-    scenes: []
+    scenes:
+    - index: 0
+      enabled: 1
+      name: SampleScene
+      path: Assets/SharedResource/Scenes/SampleScene.unity
+      sharedResourcesKey: None
+      packageName: Main
     sharedFolders: []
     sgResources: []
     sgResourcePackage: []
