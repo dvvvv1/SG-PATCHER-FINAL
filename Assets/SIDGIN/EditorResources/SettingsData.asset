@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: -265724180, guid: 805a65cc49f0cf942b9a711cb48efab1, type: 3}
   m_Name: SettingsData
   m_EditorClassIdentifier: 
-  selectedDefinition: 
+  selectedDefinition: SG-Patcher-Sample
   selectedStorageModule: Google
-  offlineMode: 0
+  offlineMode: 1
   zipCompressLevel: 9
-  definitions: []
+  definitions:
+  - name: SG-Patcher-Sample
+    storageName: Google
+    toDeleteFromCacheVersion: 
+    versionsFileId: 1iOuUrmTEBXL7P1BjIWHYC5ss4eOXuyVu
   patchTask:
     needPatch: 0
     version: 
