@@ -22,7 +22,7 @@ MonoBehaviour:
     toDeleteFromCacheVersion: 
     versionsFileId: 1gjvydCDVjLNZ2xKsoni-5E81gd-rH978
   patchTask:
-    needPatch: 0
-    version: 
-    notes: 
+    needPatch: 1
+    version: 0.0.0.21
+    notes: Add new song
     isInitial: 0

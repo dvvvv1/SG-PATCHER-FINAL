@@ -8,23 +8,42 @@ public class TestButton : MonoBehaviour
     public Text text;
     public AudioSource audioSource;
 
-    public void GetAllMusics()
+    public List<Music> GetAllMusic()
     {
         var json = SGResources.Load<TextAsset>("MusicJson");
         var list = JsonUtility.FromJson<MusicList>(json.text);
         var allMusic = list.Items.ToList();
 
+        
+
+        return allMusic;
+    }
+
+    public void ShowAllMusicInConsole()
+    {
+        var json = SGResources.Load<TextAsset>("MusicJson");
+        var list = JsonUtility.FromJson<MusicList>(json.text);
+        var allMusic = list.Items.ToList();
         foreach (var item in allMusic)
         {
             Debug.Log(item.MusicName);
         }
     }
 
+    public Music GetRandomMusic()
+    {
+        var allMusic = GetAllMusic();
+       return allMusic.Shuffle();
+    }
+
     public void Text1()
     {
-        var lagu = SGResources.Load<AudioClip>("Untuk apa");
-        audioSource.clip = lagu;
+        //Play Random
+        var music = GetRandomMusic();
+        Debug.Log(music.MusicName);
+        var lagu = SGResources.Load<AudioClip>(music.MusicName);
 
+        audioSource.clip = lagu;
         audioSource.Play();
         text.text = "Mantul 1";
     }
@@ -80,3 +99,23 @@ public class MusicList
     public List<Music> Items;
 }
 
+
+
+public static class Helpers
+{
+    public static T  Shuffle<T>(this IList<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+
+            int k = Random.Range(0, list.Count);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+
+        return list.FirstOrDefault();
+    }
+}
