@@ -20,7 +20,7 @@ MonoBehaviour:
   - name: SG-Patcher-Sample
     storageName: Google
     toDeleteFromCacheVersion: 
-    versionsFileId: 1iOuUrmTEBXL7P1BjIWHYC5ss4eOXuyVu
+    versionsFileId: 1gjvydCDVjLNZ2xKsoni-5E81gd-rH978
   patchTask:
     needPatch: 0
     version: 

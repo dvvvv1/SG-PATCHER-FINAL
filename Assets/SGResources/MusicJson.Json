@@ -1,0 +1,48 @@
+{
+    "Items": [
+        {
+            "MusicName": "123456",
+            "FilePath": "123456",
+            "Penyanyi": "Budi Doremi",
+            "Answer1": "Satu dua tiga",
+            "Answer2": "Doremi",
+            "Answer3": "123456",
+            "Answer4": "Satu dan lima",
+            "Genre": "Alternative/Indie",
+            "TahunRelease": "2019"
+        },
+        {
+            "MusicName": "1000 Tahun lamanya",
+            "FilePath": "1000 Tahun lamanya",
+            "Penyanyi": "Tulus",
+            "Answer1": "Beribu tahun lamanya",
+            "Answer2": "Serbibu tahun lamanya",
+            "Answer3": "Dua ribu saja",
+            "Answer4": "1000 Tahun lamanya",
+            "Genre": "Pop",
+            "TahunRelease": "2014"
+        },
+        {
+            "MusicName": "Mantra cinta",
+            "FilePath": "Mantra cinta",
+            "Penyanyi": "Rizky Febian",
+            "Answer1": "Jimat",
+            "Answer2": "Lathi",
+            "Answer3": "Hukum cinta",
+            "Answer4": "Mantra cinta",
+            "Genre": "Pop",
+            "TahunRelease": "2020"
+        },
+        {
+            "MusicName": "Di sepertiga malam",
+            "FilePath": "Di sepertiga malam",
+            "Penyanyi": "Rey mbayang",
+            "Answer1": "Di seperempat malam",
+            "Answer2": "Di tengah malah",
+            "Answer3": "Di sepertiga malam",
+            "Answer4": "1/3 malam",
+            "Genre": "Pop",
+            "TahunRelease": "2020"
+        }
+    ]
+}

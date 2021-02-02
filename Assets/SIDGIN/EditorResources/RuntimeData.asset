@@ -16,4 +16,7 @@ MonoBehaviour:
   - index: 0
     name: SampleScene
     sharedResources: None
+  - index: 1
+    name: Scene2
+    sharedResources: None
   sharedResources: []

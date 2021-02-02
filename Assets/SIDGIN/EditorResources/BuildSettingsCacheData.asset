@@ -22,11 +22,23 @@ MonoBehaviour:
     - index: 0
       enabled: 1
       name: SampleScene
-      path: Assets/SharedResource/Scenes/SampleScene.unity
+      path: Assets/Scenes/SampleScene.unity
+      sharedResourcesKey: None
+      packageName: Main
+    - index: 1
+      enabled: 1
+      name: Scene2
+      path: Assets/Scenes/Scene2.unity
       sharedResourcesKey: None
       packageName: Main
     sharedFolders: []
-    sgResources: []
-    sgResourcePackage: []
+    sgResources:
+    - localPath: /
+      bundleName: _sgresources
+    sgResourcePackage:
+    - packageName: Main
+      localPath: esources
+      bundleName: _sgresourcesesources
     packages:
     - Main
+    - newScene
