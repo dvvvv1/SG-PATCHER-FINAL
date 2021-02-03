@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuildSettingsCacheData
   m_EditorClassIdentifier: 
   settingsByDefinition:
-  - definitionName: SG-Patcher-Sample
+  - definitionName: Tebak-Lagu
     gameResourcesFolderPath: 
     scenesFolderPath: 
     buildTarget: 13
@@ -41,4 +41,3 @@ MonoBehaviour:
       bundleName: _sgresourcesesources
     packages:
     - Main
-    - newScene

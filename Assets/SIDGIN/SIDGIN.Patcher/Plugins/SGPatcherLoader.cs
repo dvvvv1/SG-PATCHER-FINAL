@@ -91,6 +91,7 @@ namespace SIDGIN.Patcher.Unity
             }
             var client = new PatcherClient();
             client.onProgressChanged += OnProgressChanged;
+
             return client;
         }
 
@@ -124,6 +125,7 @@ namespace SIDGIN.Patcher.Unity
         }
         public void LoadGame()
         {
+            Debug.Log("Current Version on load game " + SGPatcher.Version);
             if (SGPatcher.Version == Version.Empty)
             {
                 UpdateGame();
@@ -163,6 +165,7 @@ namespace SIDGIN.Patcher.Unity
             catch (System.Exception ex)
             {
                 var patcherClinetSettings = ClientSettings.Get();
+
                 if (patcherClinetSettings.offlineMode)
                 {
                     if (ex is UnableConnectToServer || ex is UnableLoadResource)
@@ -171,6 +174,7 @@ namespace SIDGIN.Patcher.Unity
                         {
                             LoadGame();
                         }
+                        
                         InternalErrorHandler_onErrorHandled(ex);
                     }
                     else

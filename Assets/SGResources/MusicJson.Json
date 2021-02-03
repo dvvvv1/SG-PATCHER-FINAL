@@ -65,6 +65,17 @@
             "Answer4": "1/3 malam",
             "Genre": "Pop",
             "TahunRelease": "2020"
+        },
+        {
+            "MusicName": "24K Magic",
+            "FilePath": "Di sepertiga malam",
+            "Penyanyi": "Rey mbayang",
+            "Answer1": "Di seperempat malam",
+            "Answer2": "Di tengah malah",
+            "Answer3": "Di sepertiga malam",
+            "Answer4": "1/3 malam",
+            "Genre": "Pop",
+            "TahunRelease": "2020"
         }
     ]
 }
