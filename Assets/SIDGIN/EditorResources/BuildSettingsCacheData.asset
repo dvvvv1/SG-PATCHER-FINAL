@@ -27,8 +27,8 @@ MonoBehaviour:
       packageName: Main
     - index: 1
       enabled: 1
-      name: Scene2
-      path: Assets/Scenes/Scene2.unity
+      name: TestNav
+      path: Assets/Scenes/TestNav.unity
       sharedResourcesKey: None
       packageName: Main
     sharedFolders: []

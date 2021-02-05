@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using SIDGIN.Patcher.SceneManagment;
 
 public class TestButton : MonoBehaviour
 {
@@ -65,6 +66,12 @@ public class TestButton : MonoBehaviour
 
 
         text.text = "Mantul 433242";
+    }
+
+
+    public void LoadScene(string sceneName)
+    {
+        SGSceneManager.LoadScene(sceneName);
     }
 }
 
