@@ -25,8 +25,15 @@ namespace SIDGIN.Patcher.Unity
     public class SGPatcherProgressEvent : UnityEvent<PatcherProgress> { }
     [System.Serializable]
     public class SGPatcherErrorEvent : UnityEvent<ErrorMessage> { }
+
+    
+
     public class SGPatcherLoader : MonoBehaviour
     {
+        public string customError = "Harap hidupkan internet pada saat pertama kali menginstall game ini." +
+                "\nSetelah itu kamu baru dapat memainkannya secara offline." +
+                "\nJika error ini masih terjadi, harap download versi terbaru game kami di Playstore atau coba lagi dalam beberapa saat.";
+
 
         public SGPatcherProgressEvent onProgressChanged;
         public SGPatcherErrorEvent onError;
@@ -104,6 +111,7 @@ namespace SIDGIN.Patcher.Unity
             }
             catch (System.Exception ex)
             {
+                
                 onError.Invoke(new ErrorMessage
                         {
                             exception = ex,
@@ -123,6 +131,7 @@ namespace SIDGIN.Patcher.Unity
                 yield return null;
             }
         }
+
         public void LoadGame()
         {
             Debug.Log("Current Version on load game " + SGPatcher.Version);
@@ -170,15 +179,22 @@ namespace SIDGIN.Patcher.Unity
                 {
                     if (ex is UnableConnectToServer || ex is UnableLoadResource)
                     {
-                        if (SGPatcher.Version != Version.Empty)
+                        Debug.Log("Offline");
+                        StartCoroutine(LoadGameAsync());
+
+
+                        onError.Invoke(new ErrorMessage
                         {
-                            LoadGame();
-                        }
-                        
+                            exception = ex,
+                            message = customError
+                        });
+
+
                         InternalErrorHandler_onErrorHandled(ex);
                     }
                     else
                     {
+                        Debug.Log("Other" + ex.Message);
                         onError.Invoke(new ErrorMessage
                         {
                             exception = ex,
@@ -220,6 +236,14 @@ namespace SIDGIN.Patcher.Unity
                         {
                             StartCoroutine(LoadGameAsync());
                         }
+
+                        onError.Invoke(new ErrorMessage
+                        {
+                            exception = ex,
+                            message = customError
+                        });
+
+
                         InternalErrorHandler_onErrorHandled(ex);
                     }
                     else
@@ -252,6 +276,8 @@ namespace SIDGIN.Patcher.Unity
         }
         private void InternalErrorHandler_onErrorHandled(Exception ex)
         {
+            
+
             SGDispatcher.Register(() =>
             {
                 onInternalError.Invoke(new ErrorMessage

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 1966203325, guid: 2f27773ba024b7b438c0e56203935443, type: 3}
   m_Name: ClientSettings
   m_EditorClassIdentifier: 
-  appId: 1Kg-MkwRudUx2nvBzTBwbLq1I87kyVxI7
+  appId: 11rr5YUNG9ZVtytR2XZMXDyJBKlyPldiS
   storageName: Google
   offlineMode: 1
   syncMainBuild: 1
-  languageKey: English
+  languageKey: Indonesia

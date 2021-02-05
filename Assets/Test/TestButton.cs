@@ -72,7 +72,7 @@ public class TestButton : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        SGSceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void LoadSceneNormal(string sceneName)

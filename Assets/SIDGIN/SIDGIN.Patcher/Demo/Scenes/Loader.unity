@@ -389,7 +389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &159557526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1826,7 +1826,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2281,7 +2281,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   startUpdateOnAwake: 0
-  languageKey: 
+  languageKey: Indonesia
 --- !u!114 &988136769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2437,8 +2437,8 @@ RectTransform:
   m_Father: {fileID: 1413327848}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.2728232}
-  m_AnchorMax: {x: 1, y: 0.99999964}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2737,9 +2737,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 20}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1085287556
 MonoBehaviour:
@@ -3070,9 +3070,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '(Wi-Fi Recommended)
+  m_Text: '(Di rekomendasikan menggunakan wifi)
 
-    Would you like download?'
+    Maukah anda mengunduh update
+    terbaru?'
 --- !u!222 &1327181208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3116,9 +3117,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1396630262
 MonoBehaviour:
@@ -3398,7 +3399,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 319.44992, y: 0.00005331551}
-  m_SizeDelta: {x: 625.75, y: 171.21019}
+  m_SizeDelta: {x: 625.75, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1504259958
 MonoBehaviour:
@@ -3491,9 +3492,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: -17}
+  m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1541069482
 MonoBehaviour:
@@ -3538,8 +3539,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1055922025}
   m_HandleRect: {fileID: 1055922024}
   m_Direction: 2
-  m_Value: 0.99999905
-  m_Size: 0.72717637
+  m_Value: 0.99999857
+  m_Size: 0.7410714
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

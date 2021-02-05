@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: -265724180, guid: 805a65cc49f0cf942b9a711cb48efab1, type: 3}
   m_Name: SettingsData
   m_EditorClassIdentifier: 
-  selectedDefinition: Tebak-Lagu
+  selectedDefinition: Release
   selectedStorageModule: Google
   offlineMode: 1
   zipCompressLevel: 9
   definitions:
-  - name: Tebak-Lagu
+  - name: Release
     storageName: Google
     toDeleteFromCacheVersion: 
-    versionsFileId: 1Kg-MkwRudUx2nvBzTBwbLq1I87kyVxI7
+    versionsFileId: 11rr5YUNG9ZVtytR2XZMXDyJBKlyPldiS
   patchTask:
-    needPatch: 1
-    version: 0.0.0.36
+    needPatch: 0
+    version: 
     notes: 
     isInitial: 0

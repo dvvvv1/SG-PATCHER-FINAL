@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuildSettingsCacheData
   m_EditorClassIdentifier: 
   settingsByDefinition:
-  - definitionName: Tebak-Lagu
+  - definitionName: Release
     gameResourcesFolderPath: 
     scenesFolderPath: 
     buildTarget: 13
@@ -23,12 +23,6 @@ MonoBehaviour:
       enabled: 1
       name: SampleScene
       path: Assets/Scenes/SampleScene.unity
-      sharedResourcesKey: None
-      packageName: Main
-    - index: 1
-      enabled: 1
-      name: TestNav
-      path: Assets/Scenes/TestNav.unity
       sharedResourcesKey: None
       packageName: Main
     sharedFolders: []
