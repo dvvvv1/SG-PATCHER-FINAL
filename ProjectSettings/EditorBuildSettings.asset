@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SIDGIN/SIDGIN.Patcher/Demo/Scenes/Loader.unity
     guid: 32b26f2319c0f3748983a401c5e07280
+  - enabled: 1
+    path: Assets/Scenes/LayerInBuild.unity
+    guid: 829eb1fbf1a6c7c438947886c79449cf
   m_configObjects: {}

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using SIDGIN.Patcher.SceneManagment;
+using UnityEngine.SceneManagement;
 
 public class TestButton : MonoBehaviour
 {
@@ -72,6 +73,11 @@ public class TestButton : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         SGSceneManager.LoadScene(sceneName);
+    }
+
+    public void LoadSceneNormal(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
 

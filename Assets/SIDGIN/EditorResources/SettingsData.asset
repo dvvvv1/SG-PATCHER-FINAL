@@ -22,7 +22,7 @@ MonoBehaviour:
     toDeleteFromCacheVersion: 
     versionsFileId: 1Kg-MkwRudUx2nvBzTBwbLq1I87kyVxI7
   patchTask:
-    needPatch: 0
-    version: 
+    needPatch: 1
+    version: 0.0.0.36
     notes: 
     isInitial: 0
